@@ -1,19 +1,5 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -23,16 +9,70 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.emptyBlock {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 2px;
+  border:1px solid black;
+  padding:2px;
+  font-size:10px;
+  line-height: 1;
+  cursor:pointer;
+}
+.emptyBlock:hover{
+  opacity: 0.9;
+}
+.trackWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1040px;
+  margin-bottom: 20px;
+}
+.blockItemWrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.controlInput{
+  background-color: beige;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding-left: 6px;
+  height: 30px;
+  font-size: 12px;
+}
+.controlInput:focus{
+  outline: 1px ridge rgba(170, 50, 220, 1);
+}
+.controlInputWrapper{
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.controlSaveButton{
+  
+  height: 36px;
+  border-radius: 5px;
+  background-color: beige;
+  color:darkslategrey;
+  font-weight: 500;
+  cursor: pointer;
 
-.App-link {
-  color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controlSaveButton:hover{
+  opacity: 0.9;
 }
+.controlCheckboxWrapper{
+  font-size: 12px;
+  max-width: 100px;
+  line-height: 1;
+}
+
